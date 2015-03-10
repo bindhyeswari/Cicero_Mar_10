@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>html, .addClass</title>
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script>
+        $(function () {
+            console.log($('li').eq(0).html());
+
+            $('li').eq(1).attr('data-name', 'Ramya');
+
+            console.log($('li').eq(0).attr('data-name'));
+
+            // todo: .prop() and what is the difference between this and .attr()?
+        });
+    </script>
+</head>
+<body>
+    <ul>
+        <li data-name="Jahara">Jahara</li>
+        <li>Ramya</li>
+        <li>Christina</li>
+    </ul>
+</body>
+</html>
