@@ -12,6 +12,11 @@
 
             console.log($('li').eq(0).attr('data-name'));
 
+            $('li').css('background-color', 'red');
+            $('li').css({
+                backgroundColor: 'red'
+            });
+
             // todo: .prop() and what is the difference between this and .attr()?
         });
     </script>
